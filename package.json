@@ -4,18 +4,22 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
+    "firebase-tools": "^7.11.0",
     "lite-server": "^2.5.4",
     "react-router-dom": "^5.1.2"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "eslint": "^6.7.2",
+    "husky": "^3.1.0"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "lite-server"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/MonoRight/6lab.git"
   },
-  "author": "Dima Parkhomneko",
+  "author": "Dima Parkhomenko",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/MonoRight/6lab/issues"

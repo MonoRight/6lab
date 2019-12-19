@@ -1,41 +1,105 @@
 <!DOCTYPE html>
-<html lang="ru" class="translated-ltr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<html>
+<head lang="ru" class="translated-ltr"><link><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>Фото Колаж</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
-    <style>
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        user-select: none;
-      }
-
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
-    </style>
 </head>
-
 <body>
-        <script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
-        <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
-        <script src="https://unpkg.com/react-router-dom/umd/react-router-dom.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.25.0/babel.min.js"></script>
+    <div id="app"></div>
+        
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/react-router-dom/umd/react-router-dom.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.25.0/babel.min.js"></script>
+    <script> src="functions.js"</script>
+        
+    <script type="text/babel">
+    const Router = ReactRouterDOM.BrowserRouter;
+    const Route = ReactRouterDOM.Route;
+    const Switch = ReactRouterDOM.Switch;
+    const Link = ReactRouterDOM.Link;
+     
+    class Home extends React.Component{
+        render(){
+            return <body>
+                <link href="style.css" rel="stylesheet"></link>
+<div id="content">
+<h1>Зразок оформлення веб-сторінки</h1>
 
-        <div class="container d-flex flex-column flex-md-row justify-content-between" style="margin: 50px; padding-left: 100px;">
-                <a class="py-2 d-none d-md-inline-block" href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ukrainian gallery </font></font></a>
-                <font style="vertical-align: inherit;"><a class="py-2 d-none d-md-inline-block" href="#"><font style="vertical-align: inherit;">African gallery </font></a></font><a class="py-2 d-none d-md-inline-block" href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">British gallery </font></font></a>
+<ul id="menu">
+<li><a href="#">головна</a></li>
+<li><Link to="/british">архів</Link></li>
+<li><a href="#">контакти</a></li>
+</ul>
+
+<div class="post">
+
+<div class="details">
+<h2><a href="#">Тут щось незрозуміле</a></h2>
+<p class="info">опубліковано 5хв. тому у секції <a href="#">загальне</a></p>
+</div>
+
+<div class="body">
+<p>Тут щось незрозуміле написано, треба розбиратись. Отаке тут щось незрозуміле
+написано, а часу розбиратись немає. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+nulla pariatur. </p>
+</div>
+
+</div>
+
+
+<div class="x">
+
+<div class="col">
+<h3><a href="#">І тут не ясно</a></h3>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+commodo consequat. </p>
+<p class="det">&not; <a href="#">детальніше</a></p>
+</div>
+
+<div class="col">
+<h3><a href="#">А тут взагалі абзац</a></h3>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+commodo consequat. </p>
+<p class="det">&not; <a href="#">детальніше</a></p>
+</div>
+
+<div class="col last">
+<h3><a href="#">Може я піду?</a></h3>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+commodo consequat. </p>
+<p class="det">&not; <a href="#">детальніше</a></p>
+</div>
+</div>
+
+<div id="footer">
+<p>Copyright &copy; 2018 <em>Koвтyнeць O.B. &laquo;Beб-тexнoлoгiї&raquo;</em>
+&middot; Design: ІП-6х, <a href="http://asu.kpi.ua/" title="ACOI KПI">ACОIУ KПI</a></p>
+</div>
+</div>
+</body>;
+        }
+    }
+
+    class African extends React.Component{
+        render(){
+            return <body>
+                <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"></link>
+                <link href="style1.css" rel="stylesheet"></link>
+
+            <div class="container d-flex flex-column flex-md-row justify-content-between">
+                <Link class="py-2 d-none d-md-inline-block" to="/ukrainian"><font><font>Ukrainian gallery </font></font></Link>
+                <font><Link class="py-2 d-none d-md-inline-block" to="/african"><font>African gallery </font></Link></font><Link class="py-2 d-none d-md-inline-block" to="/british"><font><font>British gallery </font></font></Link>
         </div>
 
 <div class="position-relative">
   <div class="col-md-5 p-lg-5 mx-auto my-5">
-    <h1 class="display-4 font-weight-normal"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Відкрийте для себя два мільйони років людської історії і культури.</font></font></h1>
-    <a class="btn btn-outline-secondary" href=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Далі</font></font></a>
+    <h1 class="display-4 font-weight-normal"><font><font>Відкрийте для себя два мільйони років людської історії і культури.</font></font></h1>
+    <Link class="btn btn-outline-secondary" to="/british"><font><font>Далі</font></font></Link>
   </div>
   <div class="shadow-sm d-none d-md-block"></div>
   <div class="product-device product-device-2 shadow-sm"></div>
@@ -44,36 +108,172 @@
 <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
   <div class="bg-dark mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
     <div class="my-3 py-3">
-      <h2 class="display-5"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Основні моменти колекції</font></font></h2>
-      <p class="lead"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Шахові фігури Льюїса.</font></font></p>
+      <h2 class="display-5"><font><font>Основні моменти колекції</font></font></h2>
+      <p class="lead"><font><font>Фінікійська панель сфінкса в слонової кістки.</font></font></p>
     </div>
-    <div class="bg-light shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"><img src="1.jpg" style="height: 300px;"></div>
+    <div class="bg-light shadow-sm mx-auto"><img src="5.jpg"></img></div>
   </div>
   <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
     <div class="my-3 p-3">
-      <h2 class="display-5"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Основні моменти колекції</font></font></h2>
-      <p class="lead"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Кубок Лікурга</font></font></p>
+      <h2 class="display-5"><font><font>Основні моменти колекції</font></font></h2>
+      <p class="lead"><font><font>Пот, Кераміка</font></font></p>
     </div>
-    <div class="bg-dark shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"><img src="2.jpg" style="height: 300px;"></div>
+    <div class="bg-dark shadow-sm mx-auto"><img src="6.jpg"></img></div>
   </div>
 </div>
 
 <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
   <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
     <div class="my-3 p-3">
-      <h2 class="display-5"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Основні моменти колекції</font></font></h2>
-      <p class="lead"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Богиня Тара</font></font></p>
+      <h2 class="display-5"><font><font>Основні моменти колекції</font></font></h2>
+      <p class="lead"><font><font>Пот, Кераміка</font></font></p>
     </div>
-    <div class="bg-dark shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"><img src="3.jpg" style="height: 300px;"></div>
+    <div class="bg-dark shadow-sm mx-auto"><img src="7.jpg"></img></div>
   </div>
   <div class="bg-primary mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
     <div class="my-3 py-3">
-      <h2 class="display-5"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Основні моменти колекції</font></font></h2>
-      <p class="lead"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">"Мадонна з немовлям"</font></font></p>
+      <h2 class="display-5"><font><font>Основні моменти колекції</font></font></h2>
+      <p class="lead"><font><font>"Керамічна жінка"</font></font></p>
     </div>
-    <div class="bg-light shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"><img src="4.jpg" style="height: 300px;"></div>
+    <div class="bg-light shadow-sm mx-auto"><img src="8.jpg"></img></div>
   </div>
 </div>
-<br><br><br>
-  </body>
-  </html>
+  </body>;
+        }
+    }
+
+    class Ukrainian extends React.Component{
+        render(){
+            return <body>
+                <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"></link>
+                <link href="style1.css" rel="stylesheet"></link>
+
+                <div class="container d-flex flex-column flex-md-row justify-content-between">
+                <Link class="py-2 d-none d-md-inline-block" to="/ukrainian"><font><font>Ukrainian gallery </font></font></Link>
+                <font><Link class="py-2 d-none d-md-inline-block" to="/african"><font>African gallery </font></Link></font><Link class="py-2 d-none d-md-inline-block" to="/british"><font><font>British gallery </font></font></Link>
+        </div>
+
+<div class="position-relative">
+  <div class="col-md-5 p-lg-5 mx-auto my-5">
+    <h1 class="display-4 font-weight-normal"><font><font>Відкрийте для себя два мільйони років людської історії і культури.</font></font></h1>
+    <Link class="btn btn-outline-secondary" to="/african"><font><font>Далі</font></font></Link>
+  </div>
+  <div class="shadow-sm d-none d-md-block"></div>
+  <div class="product-device product-device-2 shadow-sm"></div>
+</div>
+
+<div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
+  <div class="bg-dark mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
+    <div class="my-3 py-3">
+      <h2 class="display-5"><font><font>Основні моменти колекції</font></font></h2>
+      <p class="lead"><font><font>Скульптура з поліхромної гарбуза.</font></font></p>
+    </div>
+    <div class="bg-light shadow-sm mx-auto"><img src="9.jpg"></img></div>
+  </div>
+  <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+    <div class="my-3 p-3">
+      <h2 class="display-5"><font><font>Основні моменти колекції</font></font></h2>
+      <p class="lead"><font><font>Ангел</font></font></p>
+    </div>
+    <div class="bg-dark shadow-sm mx-auto"><img src="10.jpg"></img></div>
+  </div>
+</div>
+
+<div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
+  <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+    <div class="my-3 p-3">
+      <h2 class="display-5"><font><font>Основні моменти колекції</font></font></h2>
+      <p class="lead"><font><font>Халат Далі</font></font></p>
+    </div>
+    <div class="bg-dark shadow-sm mx-auto"><img src="11.jpg"></img></div>
+  </div>
+  <div class="bg-primary mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
+    <div class="my-3 py-3">
+      <h2 class="display-5"><font><font>Основні моменти колекції</font></font></h2>
+      <p class="lead"><font><font>"Зацікавлений Кур'єр"</font></font></p>
+    </div>
+    <div class="bg-light shadow-sm mx-auto"><img src="12.jpg"></img></div>
+  </div>
+</div>
+  </body>;
+        }
+    }
+    
+class British extends React.Component{
+    render(){
+        return <body>
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"></link>
+                <link href="style1.css" rel="stylesheet"></link>
+
+                <div class="container d-flex flex-column flex-md-row justify-content-between">
+                <Link class="py-2 d-none d-md-inline-block" to="/ukrainian"><font><font>Ukrainian gallery </font></font></Link>
+                <font><Link class="py-2 d-none d-md-inline-block" to="/african"><font>African gallery </font></Link></font><Link class="py-2 d-none d-md-inline-block" to="/british"><font><font>British gallery </font></font></Link>
+        </div>
+
+<div class="position-relative">
+  <div class="col-md-5 p-lg-5 mx-auto my-5">
+    <h1 class="display-4 font-weight-normal"><font><font>Відкрийте для себя два мільйони років людської історії і культури.</font></font></h1>
+    <Link class="btn btn-outline-secondary" to="/ukrainian"><font><font>Далі</font></font></Link>
+  </div>
+  <div class="shadow-sm d-none d-md-block"></div>
+  <div class="product-device product-device-2 shadow-sm"></div>
+</div>
+
+<div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
+  <div class="bg-dark mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
+    <div class="my-3 py-3">
+      <h2 class="display-5"><font><font>Основні моменти колекції</font></font></h2>
+      <p class="lead"><font><font>Шахові фігури Льюїса.</font></font></p>
+    </div>
+    <div class="bg-light shadow-sm mx-auto"><img src="1.jpg"></img></div>
+  </div>
+  <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+    <div class="my-3 p-3">
+      <h2 class="display-5"><font><font>Основні моменти колекції</font></font></h2>
+      <p class="lead"><font><font>Кубок Лікурга</font></font></p>
+    </div>
+    <div class="bg-dark shadow-sm mx-auto"><img src="2.jpg"></img></div>
+  </div>
+</div>
+
+<div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
+  <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+    <div class="my-3 p-3">
+      <h2 class="display-5"><font><font>Основні моменти колекції</font></font></h2>
+      <p class="lead"><font><font>Богиня Тара</font></font></p>
+    </div>
+    <div class="bg-dark shadow-sm mx-auto"><img src="3.jpg"></img></div>
+  </div>
+  <div class="bg-primary mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
+    <div class="my-3 py-3">
+      <h2 class="display-5"><font><font>Основні моменти колекції</font></font></h2>
+      <p class="lead"><font><font>"Мадонна з немовлям"</font></font></p>
+    </div>
+    <div class="bg-light shadow-sm mx-auto"><img src="4.jpg"></img></div>
+  </div>
+</div>
+  </body>;
+    }
+}
+
+    class NotFound extends React.Component{
+        render(){
+            <link href="style3.css" rel="stylesheet"></link>
+            return <div><p>Сторінка з даною адресою відсутня</p></div>;
+        }
+    }
+    ReactDOM.render(
+        <Router>
+            <Switch>
+                <Route exact path="/home" component={Home} />
+                <Route path="/african" component={African} />
+                <Route path="/ukrainian" component={Ukrainian} />
+                <Route path="/british" component={British} />
+                <Route component={NotFound} />
+            </Switch>
+        </Router>,
+        document.getElementById("app")
+    )
+    </script>
+</body>
+</html>
